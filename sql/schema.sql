@@ -21,5 +21,6 @@ CREATE TABLE IF NOT EXISTS fact_exchange_rate (
     currency_key  INTEGER NOT NULL REFERENCES dim_currency(currency_key),
     rate_pln      REAL NOT NULL,
     table_no      TEXT,
+    PRIMARY KEY (date_key, currency_key)
 
 );
