@@ -11,13 +11,12 @@ DB_URL = f"sqlite:///{ROOT / 'data' / 'nbp.db'}"
 SCHEMA_PATH = ROOT / "sql" / "schema.sql"
 
 
-def get_engine():
+def get_engine(db_url: str = DB_URL):
     (ROOT / "data").mkdir(exist_ok=True)
-    return create_engine(DB_URL)
+    return create_engine(db_url)
 
 
 def init_schema(engine) -> None:
-    """Создаёт таблицы, если их ещё нет."""
     sql = SCHEMA_PATH.read_text(encoding="utf-8")
     raw = engine.raw_connection()
     try:
@@ -103,32 +102,14 @@ def load_fact(conn, df: pd.DataFrame) -> int:
 
 
 def load_rates(df: pd.DataFrame, engine=None) -> int:
-    """Грузит DataFrame в звёздную схему. Можно запускать сколько угодно раз."""
     if df.empty:
-        logger.info("Нечего загружать")
+        logger.info("Nothing to load")
         return 0
     engine = engine or get_engine()
     init_schema(engine)
-    with engine.begin() as conn:  # одна транзакция: или всё, или ничего
+    with engine.begin() as conn:
         load_dim_date(conn, df)
         load_dim_currency(conn, df)
         n = load_fact(conn, df)
-    logger.info("Загружено строк фактов: %d", n)
+    logger.info("Fact rows loaded: %d", n)
     return n
-
-
-if __name__ == "__main__":
-    from datetime import date
-
-    from src.extract import extract_rates
-    from src.transform import transform_rates
-
-    logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
-    df = transform_rates(extract_rates(date(2024, 1, 1), date(2024, 6, 30)))
-
-    engine = get_engine()
-    for run in (1, 2):  # грузим ДВАЖДЫ, чтобы проверить идемпотентность
-        load_rates(df, engine)
-        with engine.connect() as conn:
-            count = conn.execute(text("SELECT COUNT(*) FROM fact_exchange_rate")).scalar()
-        print(f"После запуска {run}: строк в fact_exchange_rate = {count}")
