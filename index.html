@@ -1,0 +1,514 @@
+<!doctype html>
+  <html lang="en">
+  <head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marharyta Khursik — portfolio</title>
+  <meta name="description" content="Computer Science student in Warsaw who understands technology, explains it in plain language and makes good-looking content.">
+<meta property="og:title" content="Marharyta Khursik — portfolio">
+  <meta property="og:description" content="CS student · tech + plain-language communication + visual content. Warsaw.">
+  <meta property="og:image" content="me.jpg">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="bar">
+    <a class="bar__logo" href="#top" aria-label="Back to top">  
+      <span class="logo-mark" aria-hidden="true">MK</span>
+      <span class="bar__file">marharyta.exe</span>
+    </a>
+    <nav class="bar__nav" aria-label="Main">
+        <a href="#why">why me</a>
+      <a href="#projects">projects</a>
+      <a href="#path">path</a>
+
+      <a href="#stack">stack</a>
+    <a href="#contact">contact</a>
+    </nav>
+      <span class="bar__clock mono" aria-label="Time in Warsaw"><span id="clock">--:--</span> WAW</span>
+  </header>
+  <main id="main">
+
+    <section class="hero" id="top">
+      <article class="win hero__about">
+        <div class="win__bar">  
+          <span class="win__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="win__title">about.me</span>
+        </div>
+        <div class="win__body">
+          <p class="kicker mono">Hi, I'm</p>
+          <h1 class="hero__name">Marharyta<br>Khursik</h1>
+          <p class="hero__role">Developer &amp; 3D artist who speaks both <mark>tech</mark> and <mark>human</mark>.</p>
+        <p class="hero__lead">
+            Final-year CS student at UKSW (GPA 4.28). I write C# for Godot, C++ without engines,
+            Node.js + PostgreSQL backends packed into Docker, and Oracle PL/SQL. On top of that,
+            8 years of art school and a 3D character pipeline from sculpt to render, so I can build
+            the thing, draw the thing and explain the thing.
+          </p>
+          <ul class="hero__contacts mono">
+            <li><span data-px="mail"></span><a href="mailto:khursikmarharyta@gmail.com">khursikmarharyta@gmail.com</a></li>
+            <li><span data-px="phone"></span><a href="tel:+48573185277">+48 573 185 277</a></li>  
+            <li><span data-px="pin"></span>Warsaw, Poland</li>
+        </ul>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#projects">See my work</a>
+            <a class="btn" href="https://github.com/MarharytaKh" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+      </article>
+    <aside class="hero__side">
+        <article class="win win--photo">
+          <div class="win__bar">
+            <span class="win__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="win__title">me.jpg</span>
+          </div>
+          <figure class="slot slot--portrait">
+            <img src="me.jpg" alt="Portrait of Marharyta Khursik" width="360" height="360">
+            <figcaption class="slot__hint mono">GitHub avatar</figcaption>
+          </figure>
+        </article>
+      </aside>
+    </section>
+    <section class="section" id="why" aria-labelledby="why-title">
+      <header class="section__head">
+        <h2 class="h2" id="why-title">why_me.txt</h2>
+        <p class="section__sub">Three things I bring to the team, and where you can check each one.</p>
+      </header>
+
+      <ol class="reasons">  
+        <li class="win reason">
+          <div class="win__bar"><span class="win__dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="win__title">01.txt</span></div>
+          <div class="win__body">
+            <span class="reason__icon" data-px="chip" aria-hidden="true"></span>
+            <h3 class="h3">I understand technology</h3>
+            <p>I've shipped a cross-platform build, designed a REST API, configured a reverse proxy and a firewall, written PL/SQL packages and gone through code review at an internship. Systems, releases, environments and bug reports are my everyday vocabulary.</p>
+            <p class="proof mono">proof →</p>
+            <ul class="proof__list">
+              <li><a href="#p-cog">Cog Chain, released on 2 platforms</a></li>
+              <li><a href="#path">Internship, Information Systems Center</a></li>
+              <li><a href="https://github.com/MarharytaKh" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+            </div>
+        </li>
+        <li class="win reason">
+          <div class="win__bar"><span class="win__dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="win__title">02.txt</span></div>
+          <div class="win__body">
+            <span class="reason__icon" data-px="bubble" aria-hidden="true"></span>
+            <h3 class="h3">I explain complex things simply</h3>
+            <p>DocFX/Doxygen API docs and UML for Cog Chain, a player guide, a full EN/PL localisation, and leading a team: comparing tech options and presenting the chosen stack to people with different backgrounds.</p>
+          <p class="proof mono">proof →</p>
+          <ul class="proof__list">
+              <li><a href="myhr.html">MyHR launch campaign</a></li>
+              <li><a href="#projects" data-set-mode="plain">Switch projects to “plain” mode</a></li>
+              <li><a href="https://github.com/MarharytaKh/CogDoc" target="_blank" rel="noopener">Cog Chain documentation</a></li>
+              <li><a href="#p-bench">Benchmark charts anyone can read</a></li>  
+            </ul>
+          </div>
+        </li>
+
+          <li class="win reason">
+          <div class="win__bar"><span class="win__dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="win__title">03.txt</span></div>
+          <div class="win__body">
+            <span class="reason__icon" data-px="brush" aria-hidden="true"></span>
+            <h3 class="h3">I make content look good</h3>
+            <p>3D characters from sculpt to final render, hand-made game assets with baked normal maps, video editing, Canva and PowerPoint. Eight years of art school is the part most technical candidates don't have.</p>
+            <p class="proof mono">proof →</p>
+            <ul class="proof__list">
+              <li><a href="myhr.html#video">MyHR video, slides &amp; brand kit</a></li>
+              <li><a href="#art">3D characters &amp; ArtStation</a></li>
+              <li><a href="#p-detective">UI of the detective game</a></li>  
+          </ul>
+          </div>
+	       </li>
+      </ol>
+    </section>
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <header class="section__head section__head--row">
+	       <div>
+          <h2 class="h2" id="projects-title">projects/</h2>
+          <p class="section__sub">Each project, explained two ways. Pick the one that suits you.</p>
+        </div>
+        <div class="switch" role="radiogroup" aria-label="Explanation style">
+          <span class="switch__label mono">explain it</span>
+          <button class="switch__btn" role="radio" aria-checked="true" data-mode="tech">like a developer</button>
+          <button class="switch__btn" role="radio" aria-checked="false" data-mode="plain">like a human</button>
+
+        </div>
+      </header>
+
+        <div class="projects" data-mode="tech">
+
+        <article class="win project project--featured project--myhr" id="p-myhr">
+          <div class="win__bar"><span class="win__dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="win__title">myhr_launch/</span></div>
+          <div class="project__inner">
+            <div class="project__media">
+              <figure class="slot slot--wide">
+                <img src="poster.jpg" alt="Frame from the MyHR launch video: Meet MyHR, with the app home screen">
+                <figcaption class="slot__hint mono">poster.jpg</figcaption>
+              </figure>
+              <div class="project__thumbs">
+                <figure class="slot"><img src="slide-1.png" style="object-position:0 0" alt="Rollout timeline slide"><figcaption class="slot__hint mono">slide-1.png</figcaption></figure>
+                <figure class="slot"><img src="frame-step.jpg" alt="Video frame: step 02, pick your dates"><figcaption class="slot__hint mono">frame-step.jpg</figcaption></figure>
+              </div>
+            </div>
+            <div class="project__text">
+              <p class="meta mono"><span data-px="bubble"></span>concept · internal comms · solo</p>
+              <h3 class="h3">MyHR launch: internal communication campaign</h3>
+              <p class="tag-row"><span class="tag">Change comms</span><span class="tag">Newsletter</span><span class="tag">Video</span><span class="tag">PowerPoint</span><span class="tag">Adoption KPIs</span></p>
+              <p class="desc desc--tech">Adoption campaign for an HR self-service app at a fictional 600-person company with offices and a factory floor. Launch newsletter, a 58-second captioned video for muted Teams autoplay, and a 6-week rollout plan: teaser → team-lead briefings → launch → drop-in desks → inbox switch-off → pulse survey. KPIs: 80% active users in 30 days, −50% leave e-mails, 4.0/5 satisfaction.</p>
+              <p class="desc desc--plain">A made-up company gets a new HR app, and people need to actually start using it. I wrote the announcement e-mail, made a one-minute video showing how to book a holiday in three taps, and planned who hears what and when, including people in the factory who never sit at a computer.</p>
+              <ul class="stats">
+                <li><b>58s</b><span>video</span></li>
+                <li><b>6</b><span>weeks</span></li>
+                <li><b>6</b><span>channels</span></li>
+                <li><b>80%</b><span>target</span></li>
+              </ul>
+              <p class="links">
+                <a class="btn btn--primary" href="myhr.html">Open case study</a>
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="win project project--featured project--flip" id="p-smog">
+          <div class="win__bar"><span class="win__dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="win__title">smog_map/</span></div>
+          <div class="project__inner">
+            <div class="project__media">
+              <figure class="slot slot--wide">
+                <img src="smog-map.jpg" alt="Smog map: Leaflet map of Poland with air quality stations marked by index">
+                <figcaption class="slot__hint mono">smog-map.jpg</figcaption>
+              </figure>
+              <div class="project__thumbs">
+                <figure class="slot"><img src="smog-rank.jpg" style="object-position:50% 0" alt="Worst right now: ranking of Polish cities by PM2.5"><figcaption class="slot__hint mono">smog-rank.jpg</figcaption></figure>
+                <figure class="slot"><img class="fit-paper" src="smog-city.jpg" alt="City page: PM2.5, PM10 and NO2 with a 7-day history chart"><figcaption class="slot__hint mono">smog-city.jpg</figcaption></figure>
+              </div>
+              <figure class="slot slot--strip"><img class="fit-paper" src="smog-compare.jpg" alt="Compare page: Suwałki vs Kraków PM2.5 over a week"><figcaption class="slot__hint mono">smog-compare.jpg</figcaption></figure>
+            </div>
+            <div class="project__text">
+              <p class="meta mono"><span data-px="pin"></span>Nov 2026 · solo · full-stack</p>
+              <h3 class="h3">Smog Map</h3>
+              <p class="tag-row"><span class="tag">FastAPI</span><span class="tag">SQLAlchemy 2</span><span class="tag">SQLite</span><span class="tag">httpx</span><span class="tag">Next.js 15</span><span class="tag">TypeScript</span><span class="tag">Leaflet</span><span class="tag">Recharts</span><span class="tag">pytest</span></p>
+              <p class="desc desc--tech">Air quality map for Poland on the public GIOŚ API. An asyncio background task in the FastAPI lifespan syncs ~800 sensors hourly through an <code>httpx</code> client with a semaphore (3 concurrent) and retries, upserts readings into SQLite with <code>ON CONFLICT DO UPDATE</code> in 500-row batches and keeps a 30-day window. Station index uses GIOŚ thresholds (worst pollutant wins); nearest stations via haversine. 10 REST endpoints; SMTP alerts with a 6-hour cooldown and unsubscribe tokens. Next.js 15 App Router with ISR (revalidate 600 s), Leaflet loaded client-only via <code>dynamic()</code>. Frontend types generated from the OpenAPI schema with <code>openapi-typescript</code>, so a changed Python response model breaks the TS build. 16 pytest tests.</p>
+              <p class="desc desc--plain">A map of Poland that shows how clean the air is right now. Every hour it collects fresh numbers from the official government stations, shows which cities are the worst and the cleanest, draws a chart for the last week and lets you compare two cities. You can also leave your e-mail and get a message when the air near you gets bad.</p>
+              <ul class="stats">
+                <li><b>~800</b><span>sensors</span></li>
+                <li><b>1h</b><span>sync</span></li>
+                <li><b>30</b><span>days history</span></li>
+                <li><b>16</b><span>tests</span></li>
+              </ul>
+              <p class="links">
+                <a class="btn btn--primary" href="https://github.com/MarharytaKh/smog-map" target="_blank" rel="noopener">Code on GitHub</a>
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="win project project--featured" id="p-cog">
+          <div class="win__bar"><span class="win__dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="win__title">cog_chain/</span></div>
+          <div class="project__inner">
+            <div class="project__media">
+              <figure class="slot slot--wide">
+
+                <img src="images/projects/cogchain-1.jpg" alt="Cog Chain gameplay: gears connected to a motor">
+                <figcaption class="slot__hint mono">images/projects/cogchain.jpg</figcaption>
+              </figure>
+              <div class="project__thumbs">
+                <figure class="slot">
+                  <img src="images/projects/cogchain-2.jpg" alt="Cog Chain level">  
+                  <figcaption class="slot__hint mono">images/projects/cogchain-1.jpg</figcaption>
+                </figure>
+                <figure class="slot">
+
+                  <img class="fit-contain" src="images/projects/cogchain.jpg" alt="Cog Chain mechanism">
+                  <figcaption class="slot__hint mono">images/projects/cogchain-2.jpg</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="project__text">
+              <p class="meta mono"><span data-px="gear"></span>Mar – Jun 2026 · solo · Windows &amp; Android</p>
+                <h3 class="h3">Cog Chain</h3>
+              <p class="tag-row"><span class="tag">Godot 4.6</span><span class="tag">C# / .NET</span><span class="tag">Jolt Physics</span><span class="tag">Firebase REST</span><span class="tag">DocFX</span><span class="tag">Blender</span></p>
+                <p class="desc desc--tech">~3k lines of C# on Godot 4.6. Gear meshing is a BFS over a graph rooted at the motor: each node checks centre distance against summed radii and axis alignment (dot product of basis vectors), plus type compatibility from <code>GearType</code> resources; rotation direction alternates per depth. Levels, gear configs and star limits are data-driven <code>.tres</code> resources. Global singletons (Game/UI/Sound managers) run as autoloads. Accounts, cloud saves and the leaderboard talk to Firebase Auth and Realtime Database over async REST (<code>HttpClient</code> + <code>System.Text.Json</code>), with a local JSON save as fallback. EN/PL via Godot's CSV translations; docs in DocFX + UML.</p>
+              <p class="desc desc--plain">A puzzle game about gears. You connect them to a motor so that a door opens or a lamp turns on. I did everything myself: the idea, the drawings, the 3D models, the video, the testing and the release. I also wrote a guide so new players know where to start.</p>
+
+              <ul class="stats">
+                <li><b>18</b><span>levels</span></li>
+                <li><b>9</b><span>achievements</span></li>  
+                <li><b>2</b><span>languages</span></li>
+                <li><b>0</b><span>generative AI</span></li>
+              </ul>
+
+              <p class="links">
+                <a class="btn btn--primary" href="https://marharyta0006.itch.io/cogchain" target="_blank" rel="noopener">Play on itch.io</a>
+                <a class="btn" href="https://github.com/MarharytaKh/cog-chain" target="_blank" rel="noopener">Code</a>
+              <a class="btn" href="https://github.com/MarharytaKh/CogDoc" target="_blank" rel="noopener">Docs</a>  
+              </p>
+            </div>
+        </div>
+	       </article>
+
+        <article class="win project project--featured" id="p-gallery">
+          <div class="win__bar"><span class="win__dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="win__title">3d_model_gallery/</span></div>
+          <div class="project__inner">
+
+	           <div class="project__media">
+              <figure class="slot slot--wide">
+                <img src="images/projects/gallery.jpg" data-fallback="https://github.com/MarharytaKh/3D-Model-Gallery-Web-Application-/raw/main/gal.png" alt="3D Model Gallery: model viewer with technical info panel">
+                <figcaption class="slot__hint mono">images/projects/gallery.jpg</figcaption>
+              </figure>
+              <figure class="slot slot--wide">
+
+                <img src="images/projects/gallery-1.jpg" data-fallback="https://github.com/MarharytaKh/3D-Model-Gallery-Web-Application-/raw/main/gal2.png" alt="3D Model Gallery: gallery of uploaded models">
+                <figcaption class="slot__hint mono">images/projects/gallery-1.jpg</figcaption>
+
+              </figure>
+            </div>
+            <div class="project__text">
+              <p class="meta mono"><span data-px="cube"></span>Oct 2025 – Jan 2026 · solo · full-stack</p>
+              <h3 class="h3">3D Model Gallery</h3>
+              <p class="tag-row"><span class="tag">Three.js</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span><span class="tag">Nginx</span></p>
+
+              <p class="desc desc--tech">Express 5 (ES modules) REST API: <code>POST /api/upload</code> with Multer, <code>GET</code> and <code>DELETE /api/models</code>, metadata in PostgreSQL through a <code>pg</code> connection pool. Vite frontend with a Three.js viewer (<code>GLTFLoader</code>, <code>OrbitControls</code>) that reads mesh, material, vertex and triangle counts and swaps materials for base colour, normal, AO, roughness, metalness, UV-checker and wireframe passes. Docker Compose runs db, app and Nginx on an isolated internal network with a named volume for Postgres; only Nginx is exposed. The proxy container runs SSH with key-only auth, Fail2ban (3 tries → ban) and an iptables policy of default DROP with SSH allowed from one host. Health-check scripts per service.</p>
+              <p class="desc desc--plain">A website where you upload a 3D model and look at it from every side, right in the browser. You can switch views to check each texture separately, like a 3D artist does before handing a model over. Anyone can start it with one command, and the server is protected from break-in attempts.</p>
+              <ul class="stats">
+                <li><b>8</b><span>preview modes</span></li>
+                <li><b>3</b><span>containers</span></li>
+                <li><b>1</b><span>command to run</span></li>
+                <li><b>0</b><span>manual setup</span></li>
+              </ul>
+              <p class="links">
+                <a class="btn btn--primary" href="https://github.com/MarharytaKh/3D-Model-Gallery-Web-Application-" target="_blank" rel="noopener">Code on GitHub</a>
+            </p>  
+            </div>
+        </div>
+        </article>
+	       <article class="win project" id="p-detective">
+          <div class="win__bar"><span class="win__dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="win__title">detective_game/</span></div>
+          <figure class="slot slot--wide">
+            <img src="images/projects/detective.jpg" alt="Detective game: interrogation screen with evidence notebook">  
+            <figcaption class="slot__hint mono">images/projects/detective.jpg</figcaption>
+          </figure>
+          <div class="project__text">
+              <p class="meta mono"><span data-px="glass"></span>Mar – Apr 2026 · internship, UKSW</p>
+            <h3 class="h3">Detective game</h3>
+          <p class="tag-row"><span class="tag">ES6 classes</span><span class="tag">vanilla JS</span><span class="tag">CSS</span><span class="tag">Git review</span></p>
+            <p class="desc desc--tech">~1.8k lines of framework-free JavaScript split into single-purpose ES6 classes: <code>SceneSystem</code>, <code>DialogSystem</code>, <code>InterrogationSystem</code>, <code>EvidenceSystem</code>, <code>EndingSystem</code>, <code>MusicSystem</code>, wired through constructor injection around a shared <code>GameState</code> and a <code>GameAPI</code> facade. Story content (scenes, interrogations, variants) lives in data files, separate from logic; <code>StoryPicker</code> selects a random culprit variant per run. Hand-written CSS UI. Delivered in phases through commits, mentor code review and revisions.</p>
+            <p class="desc desc--plain">A small detective story you play in the browser. Every time you start, a different person is guilty, so you have to question suspects and collect clues. I designed how every screen looks and wrote the code.</p>
+            <p class="links">
+            <a class="btn btn--primary" href="https://marharytakh.github.io/detective-game/" target="_blank" rel="noopener">Play in browser</a>
+              <a class="btn" href="https://github.com/MarharytaKh/detective-game" target="_blank" rel="noopener">Code</a>
+            </p>
+
+          </div>
+        </article>
+
+        <article class="win project" id="p-bench">
+          <div class="win__bar"><span class="win__dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="win__title">benchmark/</span></div>
+          <figure class="slot slot--wide">
+            <img src="images/projects/benchmark-1.jpg" alt="Sorting and scheduler benchmark: charts of running time">
+            <figcaption class="slot__hint mono">images/projects/benchmark.jpg</figcaption>
+          </figure>
+          <div class="project__text">
+              <p class="meta mono"><span data-px="chart"></span>in progress · algorithms + operating systems</p>
+            <h3 class="h3">Sorting &amp; Scheduler Benchmark</h3>
+            <p class="tag-row"><span class="tag">Python</span><span class="tag">Benchmarking</span><span class="tag">Data viz</span></p>
+            <p class="desc desc--tech">Python benchmark harness joining two courses, algorithm analysis and operating systems. It times sorting algorithms (e.g. insertion O(n²) vs merge O(n log n)) and SJF CPU scheduling on growing input sizes and plots measured time against the theoretical complexity curve on log-log axes.</p>
+
+            <p class="desc desc--plain">A program that checks which way of sorting data is fastest, and how a computer should decide which task to do first. It runs real tests and turns the numbers into charts that anyone can read without a maths background.</p>
+          </div>
+
+        </article>
+      </div>
+
+      <h3 class="h3 more__title">also in the folder</h3>
+
+      <ul class="more">
+        <li class="more__item">
+        <figure class="slot"><img src="images/projects/dzia-1.jpg" alt="Dzia pixel game"><figcaption class="slot__hint mono">dzia.jpg</figcaption></figure>
+          <div><b>Dzia</b><span class="mono">C++ · SFML</span><p>~1.5k lines of C++ on SFML, no engine: own game loop, sprite animation, collision checks, an OOP entity hierarchy (player, enemies, boss) and file-based save slots via <code>fstream</code>.</p><a class="more__link mono" href="https://github.com/MarharytaKh/Dzia-Game" target="_blank" rel="noopener">GitHub ↗</a></div>
+
+          </li>
+        <li class="more__item">
+          <div class="icon-tile" aria-hidden="true"><span data-px="db"></span></div>
+          <div><b>Leasing</b><span class="mono">Oracle · PL/SQL</span><p>Oracle schema with constraints and indexes, a <code>pkg_leasing</code> PL/SQL package (annuity schedule split into principal/interest, payment posting, overdue → collections), an audit trigger on contract status, and reports using <code>SUM() OVER</code>, <code>RATIO_TO_REPORT</code> and <code>RANK()</code>.</p><a class="more__link mono" href="https://github.com/MarharytaKh/leasing-oracle" target="_blank" rel="noopener">GitHub ↗</a></div>
+        </li>  
+        <li class="more__item">
+        <figure class="slot"><img src="images/projects/flags.jpg" alt="Flags and Maps quiz"><figcaption class="slot__hint mono">flags.jpg</figcaption></figure>
+          <div><b>Flags &amp; Maps</b><span class="mono">C++ · Qt</span><p>Qt desktop app in C++: timed one-minute quiz on flags and country outlines, with a score counter and two game modes.</p></div>
+        </li>
+        <li class="more__item">
+          <div class="icon-tile icon-tile--y" aria-hidden="true"><span data-px="board"></span></div>
+          <div><b>Reversi</b><span class="mono">C++</span><p>Console C++ game built on polymorphism: abstract <code>Gracz</code> with human and <code>Robot</code> players; the bot greedily picks the move that flips the most discs. Player ranking persisted to file.</p><a class="more__link mono" href="https://github.com/MarharytaKh/Reversi" target="_blank" rel="noopener">GitHub ↗</a></div>
+        </li>
+      </ul>
+      </section>  
+    <section class="section" id="path" aria-labelledby="path-title">
+      <header class="section__head">
+        <h2 class="h2" id="path-title">path.log</h2>
+      </header>
+
+      <ol class="timeline">
+	       <li class="tl">
+          <span class="tl__when mono">before uni</span>
+          <span class="tl__dot" aria-hidden="true"></span>
+          <p class="tl__what"><b>Art school</b>8 years of fine arts, then UI/UX courses</p>
+        </li>
+        <li class="tl">
+          <span class="tl__when mono">2024</span>
+          <span class="tl__dot" aria-hidden="true"></span>
+          <p class="tl__what"><b>UKSW, Computer Science</b>Bachelor's, GPA 4.28 / 5</p>
+	       </li>
+        <li class="tl">
+          <span class="tl__when mono">Mar 2026</span>
+          <span class="tl__dot" aria-hidden="true"></span>
+          <p class="tl__what"><b>Student intern</b>Information Systems Center, UKSW (15 Mar – 30 Apr)</p>
+        </li>
+        <li class="tl">
+          <span class="tl__when mono">Jun 2026</span>  
+          <span class="tl__dot" aria-hidden="true"></span>
+          <p class="tl__what"><b>Cog Chain released</b>Windows &amp; Android</p>
+          </li>
+        <li class="tl">
+          <span class="tl__when mono">Oct 2026</span>
+          <span class="tl__dot" aria-hidden="true"></span>
+          <p class="tl__what"><b>Team lead</b>Planetarium 3D</p>
+        </li>
+        <li class="tl tl--next">
+          <span class="tl__when mono">2027</span>  
+          <span class="tl__dot" aria-hidden="true"></span>
+          <p class="tl__what"><b>Graduation</b>and hopefully your team</p>
+      </li>
+      </ol>
+      <div class="stackgrid" id="stack">
+        <article class="win stackgrid__main">
+          <div class="win__bar"><span class="win__dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="win__title">stack.cfg</span></div>
+          <div class="win__body">
+            <dl class="stack">
+              <dt>Languages</dt>
+              <dd><span>C</span><span>C++</span><span>C#</span><span>Python</span><span>JavaScript</span><span>SQL</span><span>PL/SQL</span><span>HTML</span><span>CSS</span></dd>
+              <dt>Web &amp; data</dt>
+              <dd><span>FastAPI</span><span>SQLAlchemy</span><span>Next.js</span><span>React</span><span>TypeScript</span><span>Node.js</span><span>Express</span><span>REST API</span><span>Three.js</span><span>Leaflet</span><span>Recharts</span><span>PostgreSQL</span><span>SQLite</span><span>Oracle</span><span>Firebase</span></dd>
+              <dt>Infra &amp; OS</dt>
+              <dd><span>Docker Compose</span><span>Nginx</span><span>Linux</span><span>SSH</span><span>Fail2ban</span><span>iptables</span><span>Git / GitHub</span></dd>
+              <dt>Games &amp; graphics</dt>
+
+              <dd><span>Godot</span><span>Unity</span><span>Unreal Engine</span><span>SFML</span><span>Qt</span><span>ZBrush</span><span>Blender</span><span>Maya</span><span>Substance</span><span>Marmoset</span></dd>
+
+              <dt>Docs &amp; process</dt>
+              <dd><span>pytest</span><span>OpenAPI</span><span>UML</span><span>Doxygen</span><span>DocFX</span><span>Jira</span><span>Trello</span><span>code review</span><span>release planning</span></dd>
+              <dt>Workplace &amp; content</dt>
+              <dd><span>Teams</span><span>SharePoint</span><span>OneDrive</span><span>Outlook</span><span>Excel</span><span>Word</span><span>PowerPoint</span><span>Canva</span><span>video editing</span></dd>
+          </dl>
+          </div>
+        </article>
+	       <article class="win">
+          <div class="win__bar"><span class="win__dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="win__title">uksw_courses.txt</span></div>
+
+          <div class="win__body">
+            <ul class="courses">
+              <li>Structured &amp; object-oriented programming</li>
+              <li>Advanced programming techniques</li>
+              <li>Algorithms &amp; data structures</li>
+              <li>Algorithm analysis &amp; benchmarking <b class="grade">5.0</b></li>
+              <li>Operating systems</li>
+              <li>Computer networks</li>
+              <li>Databases &amp; SQL</li>
+              <li>Software engineering</li>
+              <li>Intro to computer graphics</li>
+              <li>Numerical methods</li>
+            <li>Selected AI techniques</li>
+              <li>Probability &amp; statistics <b class="grade">4.5</b></li>
+              <li>Logic, discrete maths, linear algebra</li>
+              <li>Team project</li>
+            </ul>
+          </div>
+        </article>
+        <article class="win">
+          <div class="win__bar"><span class="win__dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="win__title">languages.cfg</span></div>
+          <div class="win__body">
+            <ul class="langs">
+              <li><span>English</span><span class="lvl" data-lvl="4" aria-label="C1"></span><span class="mono">C1</span></li>
+            <li><span>Polish</span><span class="lvl" data-lvl="4" aria-label="C1"></span><span class="mono">C1</span></li>  
+              <li><span>Russian</span><span class="lvl" data-lvl="4" aria-label="C1"></span><span class="mono">C1</span></li>
+              <li><span>Belarusian</span><span class="lvl" data-lvl="5" aria-label="Native"></span><span class="mono">native</span></li>
+            </ul>  
+
+            <hr class="rule">
+            <p class="h4">Certificates</p>
+            <ul class="certs">
+              <li><a href="https://cert.efset.org/en/XnZ6Hs" target="_blank" rel="noopener">EF SET English Certificate</a></li>
+              <li><a href="https://www.credly.com/badges/e0c726f0-cfec-4c1e-9018-1de50b3e54e1/linked_in_profile" target="_blank" rel="noopener">Credly digital badge</a></li>
+            </ul>
+          </div>  
+        </article>
+      </div>
+    </section>
+
+
+    <section class="section" id="art" aria-labelledby="art-title">
+      <article class="win artbox">  
+        <div class="win__bar"><span class="win__dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="win__title">3d_art/</span></div>
+        <div class="artbox__body">
+          <div class="artbox__text">
+            <h2 class="h3" id="art-title">I also make 3D characters</h2>
+            <p>Mostly 3D: sculpting, clothing, textures and final renders, plus some digital painting. 8 years of art school is why my slides, docs and game screens look finished.</p>
+
+            <dl class="pipeline">
+              <dt>sculpt</dt><dd><span>ZBrush</span><span>Blender</span></dd>
+	             <dt>model &amp; retopo</dt><dd><span>Maya</span><span>3ds Max</span><span>Blender</span></dd>
+
+              <dt>cloth</dt><dd><span>Marvelous Designer</span></dd>
+              <dt>UV</dt><dd><span>RizomUV</span></dd>
+              <dt>texture</dt><dd><span>Substance Painter</span><span>Substance Designer</span></dd>
+              <dt>render</dt><dd><span>Marmoset Toolbag</span><span>Unreal Engine</span><span>Cycles</span></dd>
+              <dt>2D</dt><dd><span>Photoshop</span><span>Krita</span></dd>
+          </dl>
+            <a class="btn" href="https://www.artstation.com/mrng_drw" target="_blank" rel="noopener">ArtStation ↗</a>
+          </div>
+          <div class="artbox__grid">
+            <figure class="slot art--tall"><img src="images/art/art-1.jpg" alt="3D character render: a mage with a book and a crystal staff"><figcaption class="slot__hint mono">art-1.jpg</figcaption><span class="art__cap mono">3D character · render</span></figure>
+            <figure class="slot art--tall"><img src="images/art/art-3.jpg" alt="3D character render with water effects"><figcaption class="slot__hint mono">art-3.jpg</figcaption><span class="art__cap mono">3D character · water FX</span></figure>
+            <figure class="slot art--tall"><img src="images/art/art-4.jpg" alt="Digital portrait painting"><figcaption class="slot__hint mono">art-4.jpg</figcaption><span class="art__cap mono">digital painting</span></figure>
+            <figure class="slot art--wide"><img src="images/art/art-2.jpg" alt="Sculpt turnaround of the mage character from four angles"><figcaption class="slot__hint mono">art-2.jpg</figcaption><span class="art__cap mono">sculpt · turnaround</span></figure>
+          </div>
+        </div>  
+      </article>
+  </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <article class="win contact">
+        <div class="win__bar"><span class="win__dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="win__title">say_hi.exe</span></div>
+        <div class="win__body contact__body">
+	         <div>
+          <h2 class="h2" id="contact-title">Let's talk</h2>
+            <p class="contact__lead">Looking for an internship where tech meets people.</p>
+            <div class="contact__mail">
+              <a class="btn btn--primary btn--big" href="mailto:khursikmarharyta@gmail.com">khursikmarharyta@gmail.com</a>
+              <button class="btn" type="button" id="copy-mail" data-copy="khursikmarharyta@gmail.com">copy</button>  
+            </div>
+          </div>
+          <ul class="contact__links mono">
+
+            <li><a href="tel:+48573185277">+48 573 185 277</a></li>
+            <li><a href="https://linkedin.com/in/marharyta-khursik" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/MarharytaKh" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.artstation.com/mrng_drw" target="_blank" rel="noopener">ArtStation</a></li>
+
+        </ul>
+        </div>
+      </article>
+    </section>
+  </main>
+
+    <footer class="foot mono">
+    <span>© <span id="year">2026</span> Marharyta Khursik · Warsaw</span>
+    <span>plain HTML, CSS &amp; JS · no frameworks</span>
+    </footer>
+
+</body>
+</html>
